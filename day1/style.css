@@ -1,0 +1,94 @@
+
+.headings>*{
+    padding: 10px 20px;
+    margin: 0;
+}
+
+h2 {
+    font-family: monospace;
+    text-align: center;
+}
+
+h3{
+    font-family: cursive;
+    text-align: right;
+}
+
+h4{
+    font-family: arial;
+    padding-left: 20px;
+}
+
+h5{
+    font-family: sans-serif;
+    padding-left: 80px;
+}
+
+h6{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.headings{
+    color: aqua;
+    background: blue;
+}
+
+
+p{
+    padding: 0 20px;
+    padding-bottom: 17px;
+    border-bottom: 1px dashed #0005;
+}
+
+ol{
+    margin: 20px;
+    padding: 30px;
+    padding-left: 50px;
+    box-shadow: 0px 0px 10px #0005;
+    border-radius: 10px;
+}
+
+ul{
+    list-style: none;
+    border: 1px dashed #0005;
+    margin: 20px;
+    padding: 10px;
+}
+
+ul>li{
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-bottom: 1px dotted #0005;
+}
+
+ul>li:first-child{
+    padding-top: 0;
+}
+
+ul>li:last-child{
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+table{
+    margin: auto;
+}
+
+table tr:nth-of-type(even){
+    background-color: rgb(208, 178, 255);
+    color: #fff;
+}
+
+table tr:nth-of-type(odd){
+    background-color: rgb(64, 23, 129);
+    color: #fff;
+}
+
+table tr *{
+    padding: 10px;
+}
+
+img{
+    width: 100%;
+    margin-top: 20px;
+}
