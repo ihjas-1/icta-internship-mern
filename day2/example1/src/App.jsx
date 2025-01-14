@@ -1,12 +1,11 @@
-import { useState } from 'react'
-import './App.css'
+import React from 'react'
+import "./App.css"
+import Login from "./components/Login"
 
-function App() {
-
-
+const App = () => {
   return (
     <>
-      <h1>Welcome</h1>
+      <Login/>
     </>
   )
 }
