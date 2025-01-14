@@ -1,4 +1,4 @@
-import { Button, Stack, Typography } from '@mui/material'
+import { Button, Stack, TextField, Typography } from '@mui/material'
 import React, { useState } from 'react'
 import NavBar from './NavBar'
 import { Link } from 'react-router'
@@ -13,6 +13,7 @@ const Home = () => {
             <NavBar title={"Home"} />
             
             <Typography width={"100vw"} textAlign={"center"}>Welcome {name}</Typography>
+            
         </Stack>
     </>
   )
