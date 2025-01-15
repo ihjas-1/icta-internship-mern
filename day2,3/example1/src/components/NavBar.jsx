@@ -29,6 +29,10 @@ const NavBar = ({ title }) => {
                 <Link to="/api">
                     <Button color='inherit'>API</Button>
                 </Link>
+                <Link to="/products">
+                    <Button color='inherit'>Products</Button>
+                </Link>
+                
             </Toolbar>
         </AppBar>
     )

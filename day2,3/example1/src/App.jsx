@@ -8,6 +8,7 @@ import Home from './components/Home'
 import Counter from './components/Counter'
 import WelcomeNew from './components/WelcomeNew'
 import Api from './components/Api'
+import Products from './components/Products'
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
         <Route path='/welcomeNew' element={<WelcomeNew/>}/>
         <Route path='/counter' element={<Counter/>}/>
         <Route path='/api' element={<Api/>}/>
+        <Route path='/products' element={<Products/>}/>
       </Routes>
     </>
   )
