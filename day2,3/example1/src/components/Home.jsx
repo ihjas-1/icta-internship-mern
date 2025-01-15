@@ -6,10 +6,18 @@ import { Link } from 'react-router'
 
 const Home = () => {
   const [name, setName] = useState("react")
+  const [val,setVal] = useState("")
   const handleInput = (e)=>{
     
-    setName(e.target.value)
+    setVal(e.target.value)
+
   }
+
+  const subHandle=()=>{
+    setName(val)
+  }
+
+
   return (
     <>
       <Stack padding={0} >
@@ -18,6 +26,7 @@ const Home = () => {
         <div className='p-10 w-full items-center justify-center flex flex-col gap-3'>
         <Typography width={"100vw"} textAlign={"center"}>Welcome {name}</Typography>
         <TextField className='w-full' onChange={handleInput} label="Name" variant='outlined' />
+        <Button onClick={subHandle}>Submit</Button>
         </div>
       </Stack>
     </>

@@ -12,13 +12,19 @@ const NavBar = ({ title }) => {
                 </Typography>
 
                 <Link to="/login" style={{marginLeft:"auto"}}>
-                    <Button style={{color:"white"}}>Login</Button>
+                    <Button color='inherit'>Login</Button>
                 </Link>
                 <Link to="/signup">
-                    <Button style={{color:"white"}}>Sign Up</Button>
+                    <Button color='inherit'>Sign Up</Button>
+                </Link>
+                <Link to="/counter">
+                    <Button color='inherit'>Counter</Button>
                 </Link>
                 <Link to="/">
-                    <Button style={{color:"white"}}>Home</Button>
+                    <Button color='inherit'>Home</Button>
+                </Link>
+                <Link to="/welcomeNew">
+                    <Button color='inherit'>Welcome</Button>
                 </Link>
             </Toolbar>
         </AppBar>

@@ -6,7 +6,7 @@ import NavBar from './NavBar'
 const SignUp = () => {
     return (
         <>
-            <Stack padding={0} margin={-1}>
+            <Stack padding={0} >
                 <NavBar title={"Create account"} />
                 <Stack spacing={2} paddingTop={4} paddingBottom={2} maxWidth={200} margin={'auto'}>
 
