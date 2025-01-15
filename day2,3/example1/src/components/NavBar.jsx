@@ -1,4 +1,4 @@
-import { AppBar, Button, Toolbar, Typography } from '@mui/material'
+import { AppBar, Box, Button, Toolbar, Typography, colors } from '@mui/material'
 import React from 'react'
 import { Link } from 'react-router'
 
@@ -10,12 +10,15 @@ const NavBar = ({ title }) => {
                     {title}
 
                 </Typography>
-            
-                <Link to="login">
-                    <Button color='green'>Login</Button>
+
+                <Link to="/login" style={{marginLeft:"auto"}}>
+                    <Button style={{color:"white"}}>Login</Button>
                 </Link>
-                <Link to="signup">
-                    <Button color='green'>Sign Up</Button>
+                <Link to="/signup">
+                    <Button style={{color:"white"}}>Sign Up</Button>
+                </Link>
+                <Link to="/">
+                    <Button style={{color:"white"}}>Home</Button>
                 </Link>
             </Toolbar>
         </AppBar>
