@@ -26,6 +26,9 @@ const NavBar = ({ title }) => {
                 <Link to="/welcomeNew">
                     <Button color='inherit'>Welcome</Button>
                 </Link>
+                <Link to="/api">
+                    <Button color='inherit'>API</Button>
+                </Link>
             </Toolbar>
         </AppBar>
     )

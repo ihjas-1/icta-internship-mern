@@ -7,6 +7,7 @@ import NavBar from './components/NavBar'
 import Home from './components/Home'
 import Counter from './components/Counter'
 import WelcomeNew from './components/WelcomeNew'
+import Api from './components/Api'
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
         <Route path='/signup' element={<SignUp/>}/>
         <Route path='/welcomeNew' element={<WelcomeNew/>}/>
         <Route path='/counter' element={<Counter/>}/>
+        <Route path='/api' element={<Api/>}/>
       </Routes>
     </>
   )
