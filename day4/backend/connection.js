@@ -4,5 +4,5 @@ const url = 'mongodb+srv://ihjas:12345679@cluster0.sqjau.mongodb.net/?retryWrite
 
 mongoose.connect(url)
     .then(() => {
-        console.log("Connected!")
+        console.log("Connected Established!")
     })

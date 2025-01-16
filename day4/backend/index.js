@@ -1,7 +1,7 @@
 
 const express = require('express')
 const app = express()
-const port = 3000
+const port = 3001
 
 require('./connection')
 
@@ -15,5 +15,5 @@ app.get('/trial', (req, res) => {
 
 
 app.listen(port, () => {
-    console.log(`Server started`)
+    console.log(`Example backend server started at ${port}`)
 })
