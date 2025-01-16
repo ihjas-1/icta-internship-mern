@@ -20,23 +20,22 @@ const Products = () => {
     return (
         <Stack padding={0} >
             <NavBar title={"Products"} />
-            <Grid container spacing={3} style={{margin:10}}>
+            <Grid container spacing={3} style={{margin:10,background:"#000",paddingBottom:"20px"}}>
                 {
                     data.map((i) => {
                         return (
                             <Grid item key={i.id}>
-                                <Card sx={{width:150}}>
-                                    <CardActionArea>
+                                <Card sx={{width:400}}>
+                                    <CardActionArea sx={{minHeight:"1000px"}}>
                                         <CardMedia
                                             component="img"
                                             image={i.image}
                                             
-                                            alt="green iguana"
-                                            sx={{height:100,width:100}}
+                                            sx={{width:"100%",padding:1}}
                                         />
                                         <CardContent>
                                             <Typography gutterBottom variant="h5" component="div">
-                                                {i.name}
+                                                {i.title}
                                             </Typography>
                                             <Typography variant="body2" sx={{ color: 'text.secondary' }}>
                                                 {i.description}
