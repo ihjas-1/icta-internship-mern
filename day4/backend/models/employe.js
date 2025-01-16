@@ -9,4 +9,4 @@ var schema = mongoose.Schema({
 
 var EmployeModel = mongoose.model("employe", schema)
 
-module.exports = EmployeModel
+module.exports = EmployeModel 
