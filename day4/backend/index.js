@@ -27,6 +27,35 @@ app.post('/add', async (req, res) => {
     }
 })
 
+app.delete('/remove/:id', async (req, res) => {
+    try {
+        await EmployeModel.findByIdAndDelete(req.params.id)
+        res.send({ message: "Deleted!" })
+    } catch (e) {
+        console.log(e)
+    }
+})
+
+app.post('/view', async (req, res) => {
+    try {
+        let data = await EmployeModel.find()
+        res.send(data)
+    } catch (e) {
+        console.log(e)
+    }
+})
+
+app.post('/update/:id', async (req, res) => {
+    try {
+        await EmployeModel.findByIdAndUpdate(req.params.id, req.body)
+        console.log("Updated!")
+        res.send({ message: "Updated!" })
+    } catch (error) {
+        console.log(error)
+    }
+})
+
+
 app.listen(port, () => {
     console.log(`Example backend server started at ${port} `)
 })
