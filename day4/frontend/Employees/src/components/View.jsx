@@ -3,6 +3,7 @@ import axios from 'axios'
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router'
 import DeleteIcon from '@mui/icons-material/Delete'
+import EditIcon from '@mui/icons-material/Edit'
 
 const View = () => {
 
@@ -50,8 +51,7 @@ const View = () => {
                                     <TableCell>Age</TableCell>
                                     <TableCell>Department</TableCell>
                                     <TableCell>Salary</TableCell>
-                                    <TableCell></TableCell>
-                                    <TableCell></TableCell>
+                                    <TableCell>Actions</TableCell>
                                 </TableRow>
                             </TableHead>
                             <TableBody>
@@ -68,9 +68,9 @@ const View = () => {
                                                     <IconButton aria-label="delete" onClick={() => deleteRow(i._id)}>
                                                         <DeleteIcon/>
                                                     </IconButton>
-                                                </TableCell>
-                                                <TableCell>
-                                                    <Button onClick={() => navigate('/', { state: { data: i } })}>EDIT</Button>
+                                                    <IconButton aria-label="edit" onClick={() => navigate('/', { state: { data: i } })}>
+                                                        <EditIcon/>
+                                                    </IconButton>
                                                 </TableCell>
                                             </TableRow>
                                         )
