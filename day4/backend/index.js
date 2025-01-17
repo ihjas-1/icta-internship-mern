@@ -5,10 +5,12 @@ const port = 3001
 
 const emp = require('./models/employe')
 const EmployeModel = require('./models/employe')
+var cors = require('cors')
 
 require('./connection')
 
 app.use(express.json())
+app.use(cors())
 app.get('/', (req, res) => {
     res.send('Hello')
 })
@@ -36,7 +38,7 @@ app.delete('/remove/:id', async (req, res) => {
     }
 })
 
-app.post('/view', async (req, res) => {
+app.get('/view', async (req, res) => {
     try {
         let data = await EmployeModel.find()
         res.send(data)
@@ -45,7 +47,7 @@ app.post('/view', async (req, res) => {
     }
 })
 
-app.post('/update/:id', async (req, res) => {
+app.put('/update/:id', async (req, res) => {
     try {
         await EmployeModel.findByIdAndUpdate(req.params.id, req.body)
         console.log("Updated!")
